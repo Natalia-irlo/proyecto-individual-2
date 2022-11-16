@@ -16,12 +16,30 @@ footer{
     font-size: 100px;
     color: rgb(194, 93, 194);
 }
-.col-circulo{
-    width: 300px;
-    height: 300px;
-    background-color: blueviolet;
+col-circulo{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(45deg, blueviolet 0%, blue 100%);
     border-radius: 100%;
-    text-align: center;
+    margin-left: 20%;
+    position: absolute;
+    z-index: 2;
+}
+fondophone1{
+    z-index: 2;
+    position: absolute;
+    margin-right:
+}
+circulo{
+    display: flex;
+    justify-content: end;
+    color:blue
+}
+cruz{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: blue;
 }
 #pagina-2{
     background-image: url("./img/woman-using-tablet.jpg");
@@ -31,10 +49,12 @@ footer{
     margin-bottom: 5%;
 }
 .tomanota{
-    margin-top: 350px;
-    margin-left: 250px;
+    margin-top: 220px;
+    margin-left: 180px;
     color: white;
     padding-right: 50%;
+    font-family: 'Newsreader';
+    font-size: 60px;
 }
 #feed{
     border-radius: 800px;
@@ -45,7 +65,7 @@ footer{
     margin-top: 100px;
     text-align: left;
 }
-h1{
+mh1{
     font-size: 80px;
 }
 #btn2{
@@ -70,6 +90,7 @@ header{
     transition: 0.7s;
     padding: 30px 20px;
     background-color: white;
+    z-index: 1000;
 }
 nav{
     display: flex;
@@ -108,4 +129,96 @@ header ul li a{
 .prueba-footer{
     text-decoration: none;
     color: white;
+}
+@media only screen and (max-width: 320px) and (min-width: 1024px) {
+    img {
+      width: 100%;
+    }
+  }
+.pag1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+.izq1{
+    padding: 40px;
+    margin-top: 20%;
+}
+.izq1 h1{
+    font-size: 70px;
+    font-family: 'Newsreader';
+}
+.izq1 p{
+    font-size: 20px;
+    color: gray;
+    font-family: 'Mulish';
+}
+.phone-1{
+    margin-top: 10%;
+}
+.movil{
+    width: 15%;
+    height: 63%;
+    margin-left: -280px;
+    position: absolute;
+    border-radius: 28px;
+}
+.fondo{
+    width: 45%;
+    height: 118%;
+    margin-left: 200px;
+    margin-top: 6px;
+    border-radius: 28px;
+    z-index: 1;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.circulos{
+    width: 450px;
+    height: 520px;
+    border-radius: 100%;
+    margin-left: 110px;
+    padding-top: 50px;
+    position: absolute;
+    z-index: -1;
+}
+.movil2{
+    width: 14%;
+    height: 55%;
+    margin-left: -280px;
+    position: absolute;
+    border-radius: 28px;
+}
+.fondo2{
+    width: 64%;
+    height: 520px;
+    margin-left: 2%;
+    margin-top: 6px;
+    border-radius: 28px;
+    z-index: 1;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.circulos2{
+    width: 350px;
+    height: 420px;
+    border-radius: 100%;
+    margin-left: -100px;
+    padding-top: 80px;
+    position: absolute;
+    z-index: -1;
 }

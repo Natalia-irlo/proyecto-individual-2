@@ -14,41 +14,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" media="only screen and (max-width: 320px)" href="style.css">
     <title>Proyecto Individual Móvil</title>
 </head>
 <body>  
     <!--navbar-->
+    <div class="container-nb">
     <header>
       <a href="#" class="nat">Réplica Web</a>
-      <nav>
-        <ul>
-          <li><a href="#">Herramientas</a></li>
-          <li><a href="#">Descargas</a></li>
-          <li><a href="https://factoriaf5.org/contacto/" target="_blank">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a href="#">Herramientas</a></li>
+          <li class="nav-item active"><a href="#">Descargas</a></li>
+          <li class="nav-item active"><a href="https://factoriaf5.org/contacto/" target="_blank">
             <p><button class="btn" id="feed" type="button"><i class="fa-solid fa-comment-dots"></i> Enviar Feedback</button></p>
         </a> </li>
         </ul>
       </nav>
     </header>
+    </div>
       <!--página 1-->
-      <div class="container text-center" >
-        <div class="row">
-          <div class="col" id="col-pag1">
-            <h1><b>¡Muéstranos tu talento programando!</b></h1>
-            <p>Esta es tu oportunidad para demostrar lo que has aprendido en la ruta de investigación y las master class</p>      
+      <div class="container">
+        <div class="pag1" id="logo">
+        <div class="izq1">
+          <h1>¡Muéstranos tu talento programando!</h1>
+          <p>Esta es tu oportunidad para demostrar lo que has aprendido en la ruta de investigación y las master class!</p>
           </div>
-          <div class="col">
-            <div class="col-circulo">
-                <img class="phone1" src="./img/recurso_movil.png" alt="imagen-movil" width="300px">
-              </div>
-             </div> 
+          <div class="phone-1">
+            <img class="circulos" src="./img/circulo.jpg" alt="circulo">
+            <img class="fondo" src="./img/fondo-movil.jpg" alt="fondo">
+            <img class="movil" src="./img/recurso_movil.png" alt="movil">
           </div>
         </div>
+      </div>
       <!--página 2-->
       <div class="container text-left" id="pagina-2">
         <div class="row">
           <div class="tomanota">
-            <h1>Y toma nota... de lo que seguirás aprendiendo</h1>
+            <p>Y toma nota...</p>
+            <p>de lo que seguirás</p>
+            <p>aprendiendo</p>
             <form class="d-flex">
                 <a href="https://factoriaf5.org/" target="_blank">
                   <p><button class="btn btn-outline-success" id="btn2" type="button">Factoría F5</button></p>
@@ -62,22 +72,26 @@
         <!--página 3-->
         <div class="container text-center">
             <div class="row">
-              <div class="col-circulo">
-                <img class="phone1" src="./img/recurso_movil.png" alt="imagen-movil" width="300px">
+              <div class="col">
+                <div class="phone-2">
+                  <img class="circulos2" src="./img/circulo.jpg" alt="circulo">
+                  <img class="fondo2" src="./img/fondo-movil.jpg" alt="fondo">
+                  <img class="movil2" src="./img/recurso_movil.png" alt="movil">
+                </div>
               </div>
               <div class="col">
-                <p class="icons"><i class="bi bi-phone"></i></p>
+                <p class="icons"><img src="./icons/smartphone.png" alt="icono.movil" width="110px"></p>
                 <h2>Hacer páginas responsive</h2>
                 <p>Aprenderás a hacer páginas ajustables a los diferentes tamaños de los dispositivos</p>
-                <p class="icons"><i class="bi bi-gift"></i></p>
+                <p class="icons"><img src="./icons/gift.png" alt="icono.gift" width="110px"> </p>
                 <h2>Hacer animaciones</h2>
-                <p>Aprendewrás a hacer animaciones por medio de CSS</p> 
+                <p>Aprenderás a hacer animaciones por medio de CSS</p> 
             </div>
               <div class="col">
-                <p class="icons"><i class="bi bi-camera"></i></p>
+                <p class="icons"><img src="./icons/camara.png" alt="icono.camera" width="110px"></p>
                 <h2>Frameworks</h2>
                 <p>Aprenderás la utilidad de los frameworks y cómo utilizarlos</p>
-                <p class="icons"><i class="bi bi-patch-check"></i></p>
+                <p class="icons"><img src="./icons/exito.png" alt="icono.tick" width="110px"></p>
                 <h2>Front end</h2>
                 <p>Y al final serán un gran desarrollador front end!</p>
               </div>
@@ -90,6 +104,6 @@
                 <a class="prueba-footer">Privacy</a> <a class="prueba-footer" href="#">Terms</a> <a class="prueba-footer" href="#">Conditions</a>
             </div>
         </footer>     
-          
+         
 </body>
 </html>
