@@ -16,26 +16,13 @@ footer{
     font-size: 100px;
     color: rgb(194, 93, 194);
 }
-col-circulo{
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(45deg, blueviolet 0%, blue 100%);
-    border-radius: 100%;
-    margin-left: 20%;
-    position: absolute;
-    z-index: 2;
-}
-fondophone1{
-    z-index: 2;
-    position: absolute;
-    margin-right:
-}
-circulo{
+
+.circulo{
     display: flex;
     justify-content: end;
     color:blue
 }
-cruz{
+.cruz{
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -65,9 +52,7 @@ cruz{
     margin-top: 100px;
     text-align: left;
 }
-mh1{
-    font-size: 80px;
-}
+
 #btn2{
     border-radius: 800px;
     border-color: white;
