@@ -57,6 +57,16 @@ footer{
     border-radius: 800px;
     border-color: white;
     color: white;
+    padding: 20px 20px;
+    display: inline-block;
+  
+}
+
+.btn:hover {
+    color: #111;
+    background: #8614ff;
+    box-shadow: 0 0 50px #b814ff;
+
 }
 .pfooter{
     display: flex;
@@ -115,11 +125,12 @@ header ul li a{
     text-decoration: none;
     color: white;
 }
-@media only screen and (max-width: 320px) and (min-width: 1024px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
     img {
       width: 100%;
     }
   }
+
 .pag1{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -206,4 +217,14 @@ header ul li a{
     padding-top: 80px;
     position: absolute;
     z-index: -1;
+}
+.btn1 {
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+.btn1:hover {
+    color: #111;
+    background: #2014ff;
+    box-shadow: 0 0 50px #3314ff;
 }
