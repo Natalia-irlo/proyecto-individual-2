@@ -16,7 +16,6 @@ footer{
     font-size: 100px;
     color: rgb(194, 93, 194);
 }
-
 .circulo{
     display: flex;
     justify-content: end;
@@ -126,7 +125,7 @@ header ul li a{
     color: white;
 }
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
-    img {
+    .fondo {
       width: 100%;
     }
   }
